@@ -14,7 +14,12 @@ class  chessboard
 	}
 	public void setChess(int X,int Y)
 	{
-		this.board[X][Y]="¡ñ";
+		this.board[X-1][Y-1]="¡ñ";
+		
+	}
+	public void comSetChess(int X,int Y)
+	{
+		this.board[X][Y]="¡ð";
 		
 	}
 	public String[][] getBoard()
@@ -58,7 +63,7 @@ class  chessboard
 					&&(temp[i][j]==temp[i][j+2])
 					&&(temp[i][j]==temp[i][j+3])
 					&&(temp[i][j]==temp[i][j+4])
-					&&((temp[i][j]=="¡ñ")||(temp[i][j]=="¡ð"))
+					&&((temp[i][j]=="¡ñ")||(temp[i][j]=="¡ð")))
 				{
 					judge=true;
 				}
@@ -66,7 +71,7 @@ class  chessboard
 					&&(temp[i][j]==temp[i+2][j+2])
 					&&(temp[i][j]==temp[i+3][j+3])
 					&&(temp[i][j]==temp[i+4][j+4])
-					&&((temp[i][j]=="¡ñ")||(temp[i][j]=="¡ð"))
+					&&((temp[i][j]=="¡ñ")||(temp[i][j]=="¡ð")))
 				{
 					judge=true;
 				}
@@ -74,7 +79,7 @@ class  chessboard
 					&&(temp[i][j]==temp[i+2][j])
 					&&(temp[i][j]==temp[i+3][j])
 					&&(temp[i][j]==temp[i+4][j])
-					&&((temp[i][j]=="¡ñ")||(temp[i][j]=="¡ð"))
+					&&((temp[i][j]=="¡ñ")||(temp[i][j]=="¡ð")))
 				{
 					judge=true;
 				}
